@@ -4,8 +4,11 @@ import numpy as np
 import plotly.express as px #Para gráficas interactivas 
 
 #Carga de los datasets
-df1 = pd.read_csv("parte_1.csv")
-df2 = pd.read_csv("parte_2.csv")
+url_parte_1 = "https://github.com/lolamanceboo/practica_final_streamlit/releases/download/v1.0/parte_1.csv"
+url_parte_2 = "https://github.com/lolamanceboo/practica_final_streamlit/releases/download/v1.0/parte_2.csv"
+
+df1 = pd.read_csv(url_parte_1)
+df2 = pd.read_csv(url_parte_2)
 
 #Concatenación vertical de ambos datasets 
 df = pd.concat([df1, df2], axis=0) 
